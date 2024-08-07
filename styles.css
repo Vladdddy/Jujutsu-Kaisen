@@ -1,0 +1,98 @@
+@font-face {
+    font-family: JujutsuKaisen;
+    src: url(Jujutsu\ Kaisen.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --background: #background: hsla(350, 73%, 44%, 1);
+    background: linear-gradient(180deg, hsla(350, 73%, 44%, 1) 0%, hsla(350, 73%, 42%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
+    background: -moz-linear-gradient(180deg, hsla(350, 73%, 44%, 1) 0%, hsla(350, 73%, 42%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#c11e38", endColorstr="#B91D38", GradientType=1);
+
+    --background-navbar: #2d060669;
+}
+
+.navbar {
+    font-family: JujutsuKaisen;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(100vw - (100vw - 100%));
+    z-index: 10;
+    padding: 10px;
+    background-color: var(--background-navbar);
+}
+
+.navbar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ecedef;
+    text-decoration: none;
+}
+
+.navbar p {
+    font-size: 25px;
+}
+
+.i {
+    width: 40px;
+}
+
+.home {
+    background-color: var(--background);
+    height: 200vh;
+}
+
+.sec1 {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sukuna-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.sukuna-background img {
+    width: 300px;
+}
+
+.title {
+    font-family: JujutsuKaisen;
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    padding-top: 90px;
+}
