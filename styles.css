@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Pixelify+Sans&display=swap');
+
 @font-face {
     font-family: JujutsuKaisen;
     src: url(Jujutsu\ Kaisen.ttf);
@@ -38,6 +41,18 @@ html {
     --background-navbar: #2d060669;
 }
 
+.home {
+    background-color: var(--background);
+    height: 120vh;
+}
+
+.subnav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    user-select: none;
+}
+
 .navbar {
     font-family: JujutsuKaisen;
     position: fixed;
@@ -45,10 +60,17 @@ html {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: calc(100vw - (100vw - 100%));
+    width: 100vh;
+    margin: 10px;
     z-index: 10;
     padding: 10px;
     background-color: var(--background-navbar);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    filter: brightness(0%);
 }
 
 .navbar a {
@@ -67,26 +89,9 @@ html {
     width: 40px;
 }
 
-.home {
-    background-color: var(--background);
-    height: 200vh;
-}
-
 .sec1 {
     height: 100vh;
     overflow: hidden;
-}
-
-.sukuna-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-
-}
-
-.sukuna-background img {
-    width: 300px;
 }
 
 .title {
@@ -95,4 +100,13 @@ html {
     justify-content: center;
     font-size: 80px;
     padding-top: 90px;
+    user-select: none;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-weight: 200;
+    font-family: 'Skranji', cursive;
 }
